@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { publicaciones } from '../../mocks/publicaciones.mocks';
+import { Publicacion } from '../../interfaces/publicacion.interface';
 
 @Component({
   selector: 'app-publicacion',
@@ -7,7 +8,7 @@ import { publicaciones } from '../../mocks/publicaciones.mocks';
 })
 export class PublicacionComponent {
 
-  publicaciones = [];
+  publicaciones: Publicacion[] = [];
 
   constructor() {
     this.publicaciones = publicaciones;
