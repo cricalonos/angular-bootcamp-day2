@@ -1,0 +1,14 @@
+<div class="row" *ngFor="let post of publicaciones; let i = index">
+  <div class="card border-info">
+    <div class="card-header bg-info text-white">
+      {{ post.title }}
+      <button type="button" class="close" aria-label="Close" (click)="eliminarPublicacion(i)">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{ post.body}}</p>
+    </div>
+  </div>
+  <br>
+</div>
