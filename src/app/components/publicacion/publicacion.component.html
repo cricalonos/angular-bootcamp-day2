@@ -1,7 +1,7 @@
 <div *ngFor="let post of publicaciones; let i = index">
   <div class="card border-info animated fadeIn fadeOut">
     <div class="card-header bg-info text-white">
-      <button type="button" class="close" aria-label="Close" (click)="eliminarPublicacion(i)">
+      <button type="button" class="close" aria-label="Close" (click)="eliminarPublicacion(post.id)">
         <span aria-hidden="true">&times;</span>
       </button>
       {{ post.title }}

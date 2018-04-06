@@ -1,4 +1,5 @@
-export const publicaciones = [
+import { Publicacion } from '../interfaces/publicacion.interface';
+export const publicaciones: Publicacion[] = [
   {
     "userId": 1,
     "id": 1,
