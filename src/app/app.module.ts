@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 import { PostService } from './services/post.service';
 
 import { AppComponent } from './app.component';
-import { PublicacionComponent } from './components/publicacion/publicacion.component';
+import { PostComponent } from './components/publicacion/post.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PublicacionComponent
+    PostComponent
   ],
   imports: [
     BrowserModule

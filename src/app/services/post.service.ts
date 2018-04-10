@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { publicaciones } from '../mocks/publicaciones.mocks';
-import { Publicacion } from '../interfaces/publicacion.interface';
+import { posts } from '../mocks/posts.mocks';
+import { Post } from '../interfaces/post.interface';
 
 @Injectable()
 export class PostService {
 
   constructor() { }
 
-  getPosts(): Publicacion[] {
-    return publicaciones;
+  getPosts(): Post[] {
+    return posts;
   }
 
-  deletePost(posts: Publicacion[], id: number) {
+  deletePost(posts: Post[], id: number) {
     posts = posts.filter(post => post.id != id);
     return posts;
   }

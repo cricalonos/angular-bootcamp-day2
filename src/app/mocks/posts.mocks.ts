@@ -1,5 +1,5 @@
-import { Publicacion } from '../interfaces/publicacion.interface';
-export const publicaciones: Publicacion[] = [
+import { Post } from '../interfaces/post.interface';
+export const posts: Post[] = [
   {
     "userId": 1,
     "id": 1,
