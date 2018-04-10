@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { PostService } from './services/post.service';
 
 import { AppComponent } from './app.component';
-import { PostComponent } from './components/publicacion/post.component';
+import { PostComponent } from './components/post/post.component';
 
 
 @NgModule({
